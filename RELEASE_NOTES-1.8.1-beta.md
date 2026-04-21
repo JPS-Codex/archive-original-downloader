@@ -1,30 +1,30 @@
 # Archive Original Downloader 1.8.1-beta
 
-Public beta release.
+Публичная beta-версия расширения.
 
-## What is included
+## Что входит в релиз
 
-- Manual installation package for Chrome and Opera.
-- Single scan download.
-- Bulk download by range or full document.
-- ZIP output or separate JPG files.
-- Meaningful archive-based file names.
-- Russian user documentation.
+- Установочный ZIP-архив для ручной установки в Chrome и Opera.
+- Скачивание одного текущего скана.
+- Пакетное скачивание диапазона сканов или всего дела.
+- Сохранение одним ZIP-архивом или отдельными JPG-файлами.
+- Понятные имена файлов на основе архивных реквизитов.
+- Русская пользовательская документация.
 
-## Supported websites
+## Поддерживаемые сайты
 
-- Yandex Archive
-- CGAMOS
-- Moscow Region archive image viewer
+- Яндекс.Архив
+- ЦГА Москвы
+- ЦГА Московской области
 
-## Important
+## Важно
 
-- For the Moscow Region archive, sign in before downloading: https://arch.mosreg.ru/login
-- If needed, register here: https://arch.mosreg.ru/registration
-- In Opera, for Yandex Archive, enable "Разрешить доступ к результатам на странице поиска".
-- This is a beta version. Archive websites may change their viewers, so fixes may be required later.
+- Перед скачиванием с сайта ЦГА Московской области войдите в личный кабинет: https://arch.mosreg.ru/login
+- Если учётной записи ещё нет, зарегистрируйтесь: https://arch.mosreg.ru/registration
+- В Opera для Яндекс.Архива включите галочку `Разрешить доступ к результатам на странице поиска`.
+- Это beta-версия. Архивные сайты могут менять просмотрщики и разметку страниц, поэтому в будущем могут понадобиться исправления.
 
-## Installation
+## Установка
 
-Download `archive-original-downloader-1.8.1-beta.zip`, unpack it, enable developer mode in Chrome or Opera, and load the unpacked extension folder.
+Скачайте `archive-original-downloader-1.8.1-beta.zip`, распакуйте архив, включите режим разработчика в Chrome или Opera и загрузите распакованную папку расширения.
 
