@@ -1,0 +1,10 @@
+*.zip
+*.crx
+*.pem
+*.psd
+.DS_Store
+Thumbs.db
+downloads/
+dist/
+node_modules/
+

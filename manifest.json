@@ -1,0 +1,61 @@
+{
+  "manifest_version": 3,
+  "name": "Archive Original Downloader",
+  "description": "Downloads original archive scans from Yandex Archive, CGAMOS and CGAMO",
+  "version": "1.8.1",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon-34.png"
+  },
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "host_permissions": [
+    "https://ya.ru/archive/*",
+    "https://yandex.ru/archive/*",
+    "https://arch.mosreg.ru/srv2/private/imageViewer/*",
+    "https://cgamos.ru/metric-books/*",
+    "https://cgamos.ru/metric-books/staroobryadtsy/*",
+    "https://cgamos.ru/inye-konfessii/islam/*",
+    "https://cgamos.ru/inye-konfessii/iudaizm/*",
+    "https://cgamos.ru/inye-konfessii/catholicism/*",
+    "https://cgamos.ru/skazki/*",
+    "https://cgamos.ru/ispovedalnye_vedomosti/*",
+    "https://cgamos.ru/obyski/*",
+    "https://cgamos.ru/cemetery/*",
+    "https://cgamos.ru/books-of-moscow-maternity-hospitals/*",
+    "https://cgamos.ru/l-dela/*",
+    "https://cgamos.ru/posemeynye-spiski/*",
+    "https://cgamos.ru/posemeynye-spiski/tsehovyh-i-remeslennikov/*"
+  ],
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://ya.ru/archive/*",
+        "https://yandex.ru/archive/*",
+        "https://arch.mosreg.ru/srv2/private/imageViewer/*",
+        "https://cgamos.ru/metric-books/*",
+        "https://cgamos.ru/metric-books/staroobryadtsy/*",
+        "https://cgamos.ru/inye-konfessii/islam/*",
+        "https://cgamos.ru/inye-konfessii/iudaizm/*",
+        "https://cgamos.ru/inye-konfessii/catholicism/*",
+        "https://cgamos.ru/skazki/*",
+        "https://cgamos.ru/ispovedalnye_vedomosti/*",
+        "https://cgamos.ru/obyski/*",
+        "https://cgamos.ru/cemetery/*",
+        "https://cgamos.ru/books-of-moscow-maternity-hospitals/*",
+        "https://cgamos.ru/l-dela/*",
+        "https://cgamos.ru/posemeynye-spiski/*",
+        "https://cgamos.ru/posemeynye-spiski/tsehovyh-i-remeslennikov/*"
+      ],
+      "js": [
+        "contentScript.bundle.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "minimum_chrome_version": "102"
+}
