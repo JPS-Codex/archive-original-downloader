@@ -1,91 +1,97 @@
 # Archive Original Downloader
 
-Public beta browser extension for downloading original archive scans from supported archive websites.
+Beta-версия браузерного расширения для скачивания оригинальных архивных сканов с поддерживаемых сайтов.
 
-The extension is intended for researchers, genealogists and archivists who need to save scans with meaningful file names. It supports single-image downloads, range downloads and full-document downloads as ZIP archives or separate JPG files.
+Расширение рассчитано на исследователей, генеалогов и всех, кто работает с архивными документами. Оно умеет скачивать один скан, диапазон сканов или всё дело целиком одним ZIP-архивом либо отдельными JPG-файлами.
 
-## Status
+## Статус
 
-This is a beta version. It works with the current layouts of supported websites. If an archive website changes its viewer or page markup, the extension may require an update.
+Это beta-версия. Расширение работает с текущей разметкой поддерживаемых сайтов. Если архивный сайт изменит просмотрщик или структуру страницы, расширению может потребоваться обновление.
 
-## Supported Browsers
+## Поддерживаемые браузеры
 
 - Google Chrome
 - Opera
 
-The extension is installed manually as an unpacked extension.
+Расширение устанавливается вручную как распакованное расширение.
 
-## Supported Websites
+## Поддерживаемые сайты и разделы
 
-- Yandex Archive: `https://yandex.ru/archive/` and `https://ya.ru/archive/`
-- CGAMOS metric books: `https://cgamos.ru/metric-books/`
-- CGAMOS old believers metric books: `https://cgamos.ru/metric-books/staroobryadtsy/`
-- CGAMOS other confessions: `islam`, `iudaizm`, `catholicism`
-- CGAMOS `skazki`
-- CGAMOS `ispovedalnye_vedomosti`
-- CGAMOS `obyski`
-- CGAMOS `cemetery`
-- CGAMOS `books-of-moscow-maternity-hospitals`
-- CGAMOS `l-dela`
-- CGAMOS `posemeynye-spiski`
-- CGAMOS `posemeynye-spiski/tsehovyh-i-remeslennikov`
-- Moscow Region archive image viewer: `https://arch.mosreg.ru/srv2/private/imageViewer/`
+- Яндекс.Архив: `https://yandex.ru/archive/` и `https://ya.ru/archive/`
+- ЦГА Москвы: `https://cgamos.ru/metric-books/`
+- ЦГА Москвы: `https://cgamos.ru/metric-books/staroobryadtsy/`
+- ЦГА Москвы: `https://cgamos.ru/inye-konfessii/islam/`
+- ЦГА Москвы: `https://cgamos.ru/inye-konfessii/iudaizm/`
+- ЦГА Москвы: `https://cgamos.ru/inye-konfessii/catholicism/`
+- ЦГА Москвы: `https://cgamos.ru/skazki/`
+- ЦГА Москвы: `https://cgamos.ru/ispovedalnye_vedomosti/`
+- ЦГА Москвы: `https://cgamos.ru/obyski/`
+- ЦГА Москвы: `https://cgamos.ru/cemetery/`
+- ЦГА Москвы: `https://cgamos.ru/books-of-moscow-maternity-hospitals/`
+- ЦГА Москвы: `https://cgamos.ru/l-dela/`
+- ЦГА Москвы: `https://cgamos.ru/posemeynye-spiski/`
+- ЦГА Москвы: `https://cgamos.ru/posemeynye-spiski/tsehovyh-i-remeslennikov/`
+- ЦГА Московской области: `https://arch.mosreg.ru/srv2/private/imageViewer/`
 
-## Important Notes
+## Важно
 
-- For the Moscow Region archive, sign in before downloading: `https://arch.mosreg.ru/login`
-- If you do not have an account, register here: `https://arch.mosreg.ru/registration`
-- In Opera, for Yandex Archive, enable the extension option named "Allow access to search page results" / "Разрешить доступ к результатам на странице поиска". Without this option, the download panel may not appear on Yandex Archive pages.
-- Download only materials that are available to you and follow the terms of use of the relevant archive website.
+- Перед скачиванием с сайта ЦГА Московской области обязательно войдите в личный кабинет: `https://arch.mosreg.ru/login`
+- Если учётной записи ещё нет, зарегистрируйтесь: `https://arch.mosreg.ru/registration`
+- В Opera для Яндекс.Архива обязательно включите у расширения галочку `Разрешить доступ к результатам на странице поиска`. Если её не включить, панель скачивания на страницах Яндекс.Архива может не появиться.
+- Скачивайте только те материалы, к которым у вас есть доступ, и соблюдайте правила использования соответствующего архивного сайта.
 
-## Installation
+## Установка
 
-1. Download the ZIP archive from GitHub Releases.
-2. Unpack it into a separate folder.
-3. Open the browser extensions page.
-4. Enable developer mode.
-5. Choose "Load unpacked".
-6. Select the unpacked extension folder.
+1. Скачайте ZIP-архив из раздела Releases.
+2. Распакуйте ZIP в отдельную папку.
+3. Откройте страницу расширений браузера.
+4. Включите режим разработчика.
+5. Нажмите `Загрузить распакованное расширение`.
+6. Выберите папку с распакованным расширением.
 
-Chrome extensions page:
+Страница расширений Chrome:
 
 ```text
 chrome://extensions/
 ```
 
-Opera extensions page:
+Страница расширений Opera:
 
 ```text
 opera://extensions/
 ```
 
-## Usage
+## Как пользоваться
 
-1. Open a supported archive page with a scan.
-2. Wait until the image is loaded.
-3. Click `Скачать скан` to download the current scan.
-4. Click `Скачать всё дело` to download a range or the whole document.
-5. Choose the range in the `С` and `По` fields if needed.
-6. Choose `Одним ZIPом` or `Отдельными файлами JPG`.
-7. Confirm the download.
+1. Откройте страницу со сканом документа.
+2. Дождитесь полной загрузки изображения.
+3. Для одного скана нажмите `Скачать скан`.
+4. Для пакетного скачивания нажмите `Скачать всё дело`.
+5. При необходимости задайте диапазон в полях `С` и `По`.
+6. Выберите `Одним ZIPом` или `Отдельными файлами JPG`.
+7. Подтвердите скачивание.
 
-During bulk download, the process can be interrupted. On the Moscow Region archive website, the page may automatically navigate through image numbers; this is expected behavior.
+Во время пакетного скачивания процесс можно прервать. На сайте ЦГА Московской области страница может автоматически переходить по номерам изображений; это нормальная часть работы пакетного режима.
 
-## File Name Examples
+## Примеры имён файлов
 
-- Yandex Archive: `ЦГА_Москвы_[ЯА]_203-780-880-0005.jpg`
-- CGAMOS: `ЦГА_Москвы_203-745-630-0001.jpg`
-- Moscow Region archive: `ЦГА_МосОбл_2510-1-850-#обл(цв).jpg`
+- Яндекс.Архив: `ЦГА_Москвы_[ЯА]_203-780-880-0005.jpg`
+- ЦГА Москвы: `ЦГА_Москвы_203-745-630-0001.jpg`
+- ЦГА Московской области: `ЦГА_МосОбл_2510-1-850-#обл(цв).jpg`
 
-## ZIP Contents
+## Что сохраняется в ZIP
 
-ZIP archives contain JPG scan files and `info.txt`. If some pages fail during bulk download, `errors.txt` is added.
+В ZIP помещаются JPG-файлы сканов и служебный файл `info.txt`. Если при пакетном скачивании часть страниц не удалось подготовить, дополнительно создаётся `errors.txt`.
 
-## Russian Documentation
+## Если кнопка не появилась
 
-See [README-RU.txt](README-RU.txt).
+- Обновите страницу архива.
+- Проверьте, что расширение включено.
+- Проверьте, что сайт входит в список поддерживаемых.
+- В Opera для Яндекс.Архива проверьте галочку `Разрешить доступ к результатам на странице поиска`.
+- Для ЦГА Московской области проверьте, что выполнен вход в личный кабинет.
 
-## License
+## Лицензия
 
-No license has been selected yet. Before publishing as an open-source project, choose a license that matches how you want others to use, modify and redistribute the extension.
+Лицензия пока не выбрана. Перед полноценной open-source-публикацией стоит выбрать лицензию, которая соответствует желаемым правилам использования, изменения и распространения расширения.
 
